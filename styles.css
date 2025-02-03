@@ -1,0 +1,102 @@
+
+  
+  
+  h3{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .pelijät{
+
+    display: flex;
+  }
+  h1{
+    color: white;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+   * {
+	box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+
+}
+.pelijä{
+    border: 5px solid  green;
+
+}
+.pelijä_btns{
+    display: flex;
+    justify-content: center;
+}
+
+.peliatdecription{
+    display: block;
+
+}
+
+.container {
+	position: relative;
+	margin: 100px 100px;
+	width: 100px;
+	height: 100px;
+	perspective: 500px;
+    max-width: 400px;
+}
+
+.cube {
+    width: inherit;
+	height: inherit;
+	transform-style: preserve-3d;
+}
+
+.side {
+    background-color: #fff;
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border: 5px solid #fff;
+	font: normal 70px Arial;
+	text-align: center;
+	line-height: 300px;
+	color: #fff;
+    backface-visibility: hidden;
+    background-position: center;           
+    -webkit-background-size: cover;
+    background-size: cover; 
+}
+
+.front {
+	transform: translateZ(50px);
+    background-image: url('./images/dice1.png');
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(50px);
+    background-image: url('./images/dice6.png');
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(50px);
+    background-image: url('./images/dice2.png');
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(50px);
+    background-image: url('./images/dice4.png');
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(50px);
+    background-image: url('./images/dice3.png');
+}
+
+.bottom {
+    background-image: url('./images/dice5.png');
+    transform: rotateX(-90deg) translateZ(50px);
+}

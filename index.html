@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Sikanoppapeli Autor Mikhail Dumma</title>
+</head>
+
+<body>
+  <h1>Esimerkki 1</h1>
+  <h3>Kuvaus</h3>
+  <div><p>Suunnittele ja toteuta sika-noppapeli. Muista tehdä projektista suunnitelma, seuraa ajankäyttöä ja lopuksi tee loppuraportti (PowerPoint-esitys).</p>
+    <p>Sikaa voi pelata yhdellä tai kahdella nopalla, mutta kahdella nopalla sika on monipuolisempi ja hauskempi peli. <strong><em>Toteuta pelistä, sekä yhden, että kahden nopan versiot!</em></strong></p>
+    <p><em><strong>Peliä pitää pystyä pelaamaan kahdella tai useammalla pelaajalla</strong></em>. Mieluusti niin, että pelin<em><strong> alussa määritellään pelaajien määrä ja nimet</strong></em>.</p>
+     <div class="pelinaloitus">
+    <label for="pelijäcount">pelijä:</label>
+    <input type="number" id="pelijäcount" value="5" max="7" min="2">
+    <button id="btn_aloita">Aloita peli</button>
+  </div>
+  <h1 id="messagewinner"></h1>
+  <div>
+    <div class="pelijät">
+      <div class="pelijä" id="pelijä0">
+        <h3 id="pelijänimi">Pelijä 1</h3>
+        <div class="peliatdecription">
+          <p id="pelimäärää">pelien määrää:</p>
+          <p id="peliresult">result:</p>
+        </div>
+        <div class="pelijä_btns">
+          <div class="pelijä_btn">
+            <button id="btn_heittää" onclick="btn_heittää(0)" disabled="true">heittää noppaa</button>
+            <button id="btn_rittää" onclick="btn_rittää(0)" disabled="true">rittää</button>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="container">
+      <div class="cube">
+        <div class="side front">
+        </div>
+        <div class="side back"></div>
+        <div class="side right"></div>
+        <div class="side left"></div>
+        <div class="side top"></div>
+        <div class="side bottom"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+</body>
+
+</html>

@@ -6,7 +6,7 @@
     margin-right: auto;
     text-align: center;
   }
-  .pelijät{
+  .pelaajat{
 
     display: flex;
   }
@@ -23,14 +23,14 @@
 
 body {
   overflow: hidden;
-  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  background-image: linear-gradient(to right, red,orange,yellow,green,red);
 
 }
-.pelijä{
+.pelaaja{
     border: 5px solid  green;
 
 }
-.pelijä_btns{
+.pelaaja_btns{
     display: flex;
     justify-content: center;
 }
@@ -39,7 +39,10 @@ body {
     display: block;
 
 }
-
+.cubescontainer{
+    display:flex;
+    align-items: center;
+}
 .container {
 	position: relative;
 	margin: 100px 100px;
@@ -49,7 +52,7 @@ body {
     max-width: 400px;
 }
 
-.cube {
+.cube0, .cube1{
     width: inherit;
 	height: inherit;
 	transform-style: preserve-3d;
